@@ -1,0 +1,73 @@
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0083d0;
+  padding-bottom: 0.6em;
+  border-bottom: #0083d0 solid;
+}
+
+.autor,
+.message,
+.results {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.message {
+  margin: 0;
+  padding-left: 0.5em;
+}
+
+.autor {
+  color: #292d3e;
+}
+.container {
+  width: 60%;
+  margin: auto;
+  padding: 2em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  background: #e7eaed;
+}
+
+.container-elements {
+  display: flex;
+  margin-top: 0.8em;
+}
+
+.txtName,
+.txtMessage {
+  padding: 0.5em;
+  border: rgba(41, 45, 62, 0.6) solid 1px;
+  border-radius: 0.5em;
+}
+
+.btnButton {
+  padding: 0.5em;
+  border: rgba(0, 0, 0, 0) solid 1px; /*Truco, para mantener el border*/
+  border-radius: 0.5em;
+  background: #2eb67d;
+  color: #fff;
+}
+
+.btnButton:hover {
+  color: #2eb67d;
+  background: #fff;
+  border: #2eb67d solid 1px;
+}
+
+.results {
+  color: #fff;
+  font-weight: bold;
+  background: rgba(0, 131, 208, 0.7);
+  border-radius: 0.6em;
+  padding: 0.5em;
+}
+
+/*Oculta el primer p ya que ese es el default*/
+.results:first-of-type {
+  display: none;
+}
+
+.results:hover {
+  background: rgba(0, 131, 208, 1);
+}
